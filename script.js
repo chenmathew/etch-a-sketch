@@ -5,3 +5,5 @@ div.classList.add('squares');
 div.textContent = "temp";
 
 squares.appendChild(div);
+
+bruh
