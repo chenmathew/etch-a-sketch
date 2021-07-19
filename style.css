@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    font-size: 100px;
+}
+
+.squares {
+    border: red solid 1px;
+    display: flex;
+}
