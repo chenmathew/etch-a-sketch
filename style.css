@@ -8,9 +8,21 @@ body {
     font-size: 100px;
 }
 
-.squares {
-    border: red solid 1px;
-    display: flex;
+.gridContainer {
+  display: flex;
+  background-color: #2196F3;
+  padding: 10px;
 }
 
-bruh
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  flex: 1;
+}
+
+.gridItem:hover {
+    background-color: #2196F3;
+}
