@@ -9,20 +9,40 @@ body {
 }
 
 .gridContainer {
-  display: flex;
-  background-color: #2196F3;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(16, 40px);
+  grid-template-rows: repeat(16, 40px);
+  justify-content: center;
 }
 
 .gridItem {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  flex: 1;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
 }
 
 .gridItem:hover {
     background-color: #2196F3;
+}
+
+.reset {
+  width: 150px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.active {
+  background-color: orange;
+}
+
+.test {
+  border: 1px solid red;
 }
