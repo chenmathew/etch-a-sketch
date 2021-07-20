@@ -39,10 +39,6 @@ body {
 
 }
 
-.active {
+.mouseover {
   background-color: orange;
-}
-
-.test {
-  border: 1px solid red;
 }

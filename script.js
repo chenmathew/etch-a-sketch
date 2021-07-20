@@ -15,13 +15,16 @@ const grid = document.querySelector(".gridContainer")
 
 grid.addEventListener('mouseover', function (event) {
 	if (event.target.matches('.gridItem')) {
-		event.target.classList.add('active');
+		event.target.classList.add('mouseover');
 	}
 });
 
 function reset() {
-	let elem = document.querySelector('.gridContainer');
-	elem.remove();
+	for (let i = 0; i < gridSize; i++) {
+		let elem = document.querySelector('.gridItem');
+		elem.remove();
+	}
+	createGrid();
 }
 
 createGrid();
