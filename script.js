@@ -1,12 +1,13 @@
-let gridSize = 256;
+const sliderNum = document.querySelector(".sliderNum")
+let gridSize = sliderNum.textContent * sliderNum.textContent;
 
 //Creates a grid
 function createGrid() {
 	for (let i = 0; i < gridSize; i++) {
-		const squares = document.querySelector(".gridContainer")
-		const div = document.createElement("div");
-		div.classList.add('gridItem');
-		squares.appendChild(div);
+		const gridContainer = document.querySelector(".gridContainer")
+		const gridItem = document.createElement("div");
+		gridItem.classList.add('gridItem');
+		gridContainer.appendChild(gridItem);
 	}
 }
 
@@ -25,6 +26,12 @@ function reset() {
 		elem.remove();
 	}
 	createGrid();
+}
+
+function displayNum() {
+	const slider = document.querySelector(".slider");
+	sliderNum.textContent = slider.value;
+	reset();
 }
 
 createGrid();

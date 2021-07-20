@@ -10,9 +10,10 @@ body {
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(16, 40px);
-  grid-template-rows: repeat(16, 40px);
+  grid-template-columns: repeat(16, 32px);
+  grid-template-rows: repeat(16, 32px);
   justify-content: center;
+  border: 1px solid red;
 }
 
 .gridItem {
@@ -23,7 +24,7 @@ body {
 }
 
 .gridItem:hover {
-    background-color: #2196F3;
+    background-color: blue;
 }
 
 .reset {
@@ -36,9 +37,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .mouseover {
   background-color: orange;
+}
+
+.slidecontainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
